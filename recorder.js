@@ -19,14 +19,15 @@ const encoder = lame.Encoder({
 class Recorder {
   constructor() {
     // interval in minutes
-    this.interval = 60;
+    this.interval = 5;
     this.audioFile = '';
     this.stream = null;
     this.terminated = false;
     
     // ingest stream, send to encoder
     icy.get(streamURL, function(res) {
-      res.pipe(decoder).pipe(encoder);
+      res.pipe(decoder)
+        .pipe(encoder);
     });
   }
 
