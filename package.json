@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/overwatchcorp/time-delay-kdfc/issues"
   },
-  "homepage": "https://github.com/overwatchcorp/time-delay-kdfc#readme"
+  "homepage": "https://github.com/overwatchcorp/time-delay-kdfc#readme",
+  "dependencies": {
+    "@suldashi/lame": "^1.2.5",
+    "icy": "^2.1.0",
+    "speaker": "^0.5.1"
+  }
 }
